@@ -6,8 +6,10 @@ Repositório voltado para desenvolvimento do projeto de Sistemas Embarcados, 202
 A Valorização do ambiente, sofisticação aliada a tecnologia, acessibilidade a idosos e cadeirantes, eficiência energética em ambientes climatizados, conforto térmico e acústico a clientes e funcionários, integração com diversos controles de acesso e a consideração com o atual cenário mundial aliada aos cuidados inerentes à prevenção do Covid.
 
 # Descrição
-Pretende-se implementar componentes pré requisitados neste projeto (Beaglebone, comunicação CAN, controlador e motor) de forma a desenvolver uma porta de acesso à obras que seja acionada de forma automatica ao identificar a presença de um usuário.\
-Seu funcionamento será pautado com a utilização de sensores de proximidade (ultra sônico), de modo que movimento um determinado motor que simulará a abertura da porta. Caso a distância detectada volte à leitura inicial, o motor irá rotacionar em sentido contrário, simulando o fechamento da porta.\
+Pretende-se implementar componentes pré requisitados neste projeto (Beaglebone, comunicação CAN, controlador e motor) de forma a desenvolver uma porta de acesso à obras que seja acionada de forma automatica ao identificar a presença de um usuário.
+
+Seu funcionamento será pautado com a utilização de sensores de proximidade (ultra sônico), de modo que movimento um determinado motor que simulará a abertura da porta. Caso a distância detectada volte à leitura inicial, o motor irá rotacionar em sentido contrário, simulando o fechamento da porta.
+
 Toda a comunicação do motor com a placa lógica será implementada seguindo critérios do protocolo CAN, bem como o envio do sinal do sensor para a placa. No mais, também será  registrado os momentos em que a porta atingirá sua abertura e fechamento. Dadas as informações, pode-se obter o período que a porta permaneceu aberta e sua frequência de abertura ao longo do tempo.
 # Integrantes
 Alex José Arantes\
