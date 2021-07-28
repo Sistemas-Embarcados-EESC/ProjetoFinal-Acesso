@@ -13,7 +13,7 @@ Seu funcionamento será pautado com a utilização de sensores de proximidade (u
 Toda a comunicação do motor com a placa lógica será implementada seguindo critérios do protocolo CAN, bem como o envio do sinal do sensor para a placa. No mais, também será  registrado os momentos em que a porta atingirá sua abertura e fechamento. Dadas as informações, pode-se obter o período que a porta permaneceu aberta e sua frequência de abertura ao longo do tempo.
 # Integrantes
 Alex José Arantes\
-Artur Maglhães\
+Artur Magalhães\
 Angela Alves \
 Arthur Monte
 
