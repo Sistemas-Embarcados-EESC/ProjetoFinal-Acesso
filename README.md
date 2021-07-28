@@ -46,5 +46,5 @@ A grande maioria das portas automáticas comerciais têm mecanismo composto por 
 # Simulação
 Dada a situação de Pandamia do Covid-19, e as necessidades de afastamento de alunos e professores, a construção física do projeto não poderá ser realizada, limitando-se a simulações. Desenvolveu-se uma aplicação em Python simulando o cenário de controle e automação das portas.
 
-![image](https://user-images.githubusercontent.com/86329504/127406000-6061ec98-cfcb-4f74-ab03-623e47db7554.png)
+![image](https://user-images.githubusercontent.com/86329504/127406284-50d9922a-ed76-4323-9e3e-c1f34bf78af2.png)
 
