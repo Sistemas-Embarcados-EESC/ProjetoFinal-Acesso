@@ -1,7 +1,6 @@
 # Projeto
 Repositório voltado para desenvolvimento do projeto de Sistemas Embarcados, 2021/1, do Curso de Engenharia Mecatrônica EESC-USP.
 
-
 # Motivação
 A Valorização do ambiente, sofisticação aliada a tecnologia, acessibilidade a idosos e cadeirantes, eficiência energética em ambientes climatizados, conforto térmico e acústico a clientes e funcionários, integração com diversos controles de acesso e a consideração com o atual cenário mundial aliada aos cuidados inerentes à prevenção do Covid.
 
@@ -36,14 +35,14 @@ O sensor deve detectar corretamente a presença de 95% das vezes em menos de 3 s
 
 O sistema fechará as portas após um intervalo de tempo, sem mudança no sinal do sensor.
 
-# Como faremos para contemplar os requisitos
+# Etapas
 O sistema fará constante leitura dos sensores para garantir a correta detecção de pessoas, e consequentemente o devido acionamento dos motores para abertura da porta, e também fechá-la conforme as condições especificadas;
 
 Para cumprir as especificações de desempenho mostradas (tempo de resposta e recorrência de falhas), a porta contará com mecanismo de fácil movimentação, oferencendo a menor restencia possível, dentro de um bom custo benefício. Além disso, utilizaremos motores que forneçam uma resposta adequada ao comportamento desejado.
 
 A grande maioria das portas automáticas comerciais têm mecanismo composto por motor, atuador e correia dentada para transmissão do movimento. O grupo realizaria a confecção do protótipo seguindo a mesma ideia, uma vez se trata de uma solução barata e eficiente para o sistema.
 
-# Simulação
+# Fluxograma
 Dada a situação de Pandamia do Covid-19, e as necessidades de afastamento de alunos e professores, a construção física do projeto não poderá ser realizada, limitando-se a simulações. Desenvolveu-se uma aplicação em Python simulando o cenário de controle e automação das portas.
 
 ![image](https://user-images.githubusercontent.com/86329504/127406284-50d9922a-ed76-4323-9e3e-c1f34bf78af2.png)
