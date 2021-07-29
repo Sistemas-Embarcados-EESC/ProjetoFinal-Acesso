@@ -47,3 +47,6 @@ Dada a situação de Pandamia do Covid-19, e as necessidades de afastamento de a
 
 ![image](https://user-images.githubusercontent.com/86329504/127406284-50d9922a-ed76-4323-9e3e-c1f34bf78af2.png)
 
+# Exemplo de uma porta 
+
+![image](https://user-images.githubusercontent.com/86329504/127577392-621da455-ae77-4f92-adc5-c0075e5cf13d.png)
