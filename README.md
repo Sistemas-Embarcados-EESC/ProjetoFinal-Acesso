@@ -1,52 +1,44 @@
-# Projeto
-Repositório voltado para desenvolvimento do projeto de Sistemas Embarcados, 2021/1, do Curso de Engenharia Mecatrônica EESC-USP.
 
-# Motivação
-A Valorização do ambiente, sofisticação aliada a tecnologia, acessibilidade a idosos e cadeirantes, eficiência energética em ambientes climatizados, conforto térmico e acústico a clientes e funcionários, integração com diversos controles de acesso e a consideração com o atual cenário mundial aliada aos cuidados inerentes à prevenção do Covid.
+# Projeto Proposto - Controle de Acessos em Grandes Obras
+Repositório voltado para desenvolvimento do projeto proposto para a disciplina de Sistemas Embarcados, 2021/1, do Curso de Engenharia Mecatrônica EESC-USP.
 
-# Descrição
-Pretende-se implementar componentes pré requisitados neste projeto (Beaglebone, comunicação CAN, controlador e motor) de forma a desenvolver uma porta de acesso à obras que seja acionada de forma automatica ao identificar a presença de um usuário.
-
-Seu funcionamento será pautado com a utilização de sensores de proximidade (ultra sônico), de modo que movimento um determinado motor que simulará a abertura da porta. Caso a distância detectada volte à leitura inicial, o motor irá rotacionar em sentido contrário, simulando o fechamento da porta.
-
-Toda a comunicação do motor com a placa lógica será implementada seguindo critérios do protocolo CAN, bem como o envio do sinal do sensor para a placa. No mais, também será  registrado os momentos em que a porta atingirá sua abertura e fechamento. Dadas as informações, pode-se obter o período que a porta permaneceu aberta e sua frequência de abertura ao longo do tempo.
 # Integrantes
 Alex José Arantes\
 Artur Magalhães\
 Angela Alves \
 Arthur Monte
 
+# Motivação
+A Valorização do ambiente, sofisticação aliada a tecnologia, acessibilidade a idosos e cadeirantes, eficiência energética em ambientes climatizados, conforto térmico e acústico a clientes e funcionários, integração com diversos controles de acesso e a consideração com o atual cenário mundial aliada aos cuidados inerentes à prevenção do Covid.
 
-# Requisitos funcionais
-O sistema manterá as portas fechadas até que os sensores acusem a presença de um usuário.
+# Descrição do Projeto
+Pretende-se implementar os componentes requisitados para este projeto (Beaglebone, comunicação CAN, controlador e motor) de forma a desenvolver uma porta de acesso à obras que seja acionada automaticamente ao identificar a presença de um usuário. 
 
-Uma vez detectada a presença de uma pessoa (gerando um sinal de entrada), o sistema deverá acionar os motores responsáveis pela abertura das portas.
+![image](https://user-images.githubusercontent.com/86329504/127577392-621da455-ae77-4f92-adc5-c0075e5cf13d.png)
+
+O funcionamento do sistema se dará através da utilização de sensores de proximidade (ultra sônico), de modo que o acionamento de dois motores será referente à abertura da porta. Caso a distância detectada volte à leitura inicial, ou seja, não exista usuário próximo, os motores serão acionados no sentido contrário, realizando o fechamento da porta.
+
+A comunicação com a placa lógica será implementada seguindo critérios do protocolo CAN, através dele serão enviadas à rede CAN informações referentes ao estado de abertura da porta que possibilitam monitorar o sistema a partir de outro dispositivo conectado na rede. No mais, também será  registrado os momentos em que a porta atingirá sua abertura e fechamento, visando obter o período que a porta permaneceu aberta e sua frequência de abertura ao longo do tempo.
+
+
+# Parâmetros de Funcionamento
+
+O sistema deverá acionar os motores responsáveis pela abertura das portas quando detectada a presença de uma pessoa (gerando um sinal de entrada).
+
+O sistema manterá as portas fechadas caso não haja detecção pelos sensores.
 
 O sistema monitorará as leituras dos sensores constantemente.
 
-Após uma variação de sinal entre uma distância maior que a pré-definida para uma menor, a porta deverá permanecer em repouso durante um tempo pré-estabelecido.
+Após uma variação de sinal entre uma distância maior que a pré-definida para uma menor, a porta deverá aguardar uma nova leitura de sinal durante um tempo pré-estabelecido.
 
-Área de leitura dos sensores devem preencher totalmente a área de travessia dos usuários.
+Serão registrados os horários de acionamento dos motores e sentido de rotação.
 
-Registrar os horários de acionamento dos motores e sentido de rotação.
-
-# Requisitos não funcionais
-O sensor deve detectar corretamente a presença de 95% das vezes em menos de 3 segundos.
-
-O sistema fechará as portas após um intervalo de tempo, sem mudança no sinal do sensor.
-
-# Etapas
-O sistema fará constante leitura dos sensores para garantir a correta detecção de pessoas, e consequentemente o devido acionamento dos motores para abertura da porta, e também fechá-la conforme as condições especificadas;
-
-Para cumprir as especificações de desempenho mostradas (tempo de resposta e recorrência de falhas), a porta contará com mecanismo de fácil movimentação, oferencendo a menor restencia possível, dentro de um bom custo benefício. Além disso, utilizaremos motores que forneçam uma resposta adequada ao comportamento desejado.
-
-A grande maioria das portas automáticas comerciais têm mecanismo composto por motor, atuador e correia dentada para transmissão do movimento. O grupo realizaria a confecção do protótipo seguindo a mesma ideia, uma vez se trata de uma solução barata e eficiente para o sistema.
-
-# Fluxograma
-Dada a situação de Pandamia do Covid-19, e as necessidades de afastamento de alunos e professores, a construção física do projeto não poderá ser realizada, limitando-se a simulações. Desenvolveu-se uma aplicação em Python simulando o cenário de controle e automação das portas.
 
 ![image](https://user-images.githubusercontent.com/86329504/127406284-50d9922a-ed76-4323-9e3e-c1f34bf78af2.png)
 
-# Exemplo de uma porta 
+# Considerações e Validação dos Parâmetros
 
-![image](https://user-images.githubusercontent.com/86329504/127577392-621da455-ae77-4f92-adc5-c0075e5cf13d.png)
+Por conta da situação atual decorrente da pandemia de Covid 19, que dificulta a interação presencial entre os alunos integrantes do grupo para a construção de um protótipo funcional e o acesso aos materiais fornecidos pela universidade, optamos por validar o funcionamento do projeto através de uma simulação da lógica contida no código base escrito em Python que seria utilizada para controlar os dispositivos.
+
+
+![simulação_controle_de_acessos](https://user-images.githubusercontent.com/83198956/127705301-8f679736-6e7b-4b9c-9d11-5e8319891887.jpg)
