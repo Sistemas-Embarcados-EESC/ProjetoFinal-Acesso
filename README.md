@@ -3,10 +3,10 @@
 Repositório voltado para desenvolvimento do projeto proposto para a disciplina de Sistemas Embarcados, 2021/1, do Curso de Engenharia Mecatrônica EESC-USP.
 
 # Integrantes
-Alex José Arantes\
-Artur Magalhães\
-Angela Alves \
-Arthur Monte
+Alex José Arantes			NºUSP 9806791\
+Artur Magalhães				NºUSP 9051612\
+Angela Alves					NºUSP 9850311\
+Arthur Monte					NºUSP 9805612
 
 *todos os integrantes participaram efetivamente da elaboração do trabalho e definição das premissas e requisitos utilizados.
 
@@ -21,6 +21,8 @@ Pretende-se implementar os componentes requisitados para este projeto (Beaglebon
 O funcionamento do sistema se dará através da utilização de sensores de proximidade (ultra sônico), de modo que o acionamento de dois motores será referente à abertura da porta. Caso a distância detectada volte à leitura inicial, ou seja, não exista usuário próximo, os motores serão acionados no sentido contrário, realizando o fechamento da porta.
 
 A comunicação com a placa lógica será implementada seguindo critérios do protocolo CAN, através dele serão enviadas à rede CAN informações referentes ao estado de abertura da porta que possibilitam monitorar o sistema a partir de outro dispositivo conectado na rede. No mais, também será  registrado os momentos em que a porta atingirá sua abertura e fechamento, visando obter o período que a porta permaneceu aberta e sua frequência de abertura ao longo do tempo.
+
+
 
 
 # Parâmetros de Funcionamento
