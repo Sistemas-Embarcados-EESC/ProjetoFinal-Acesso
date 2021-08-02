@@ -9,7 +9,7 @@ import can #Biblioteca do python-can
  
 #Definir qual controlador vamos usar
  
-bus = can.interface.Bus(channel='can0', bustype='socketcan_ctypes') #Selecionamos o can0 como o controlador que monitorará as mensagens
+bus = can.interface.Bus(channel='can0', bustype='socketcan_native') #Selecionamos o can0 como o controlador que monitorará as mensagens
  
 #Definindo um id conhecido
  
