@@ -8,6 +8,8 @@ Artur Magalhães\
 Angela Alves \
 Arthur Monte
 
+*todos os integrantes participaram efetivamente da elaboração do trabalho e definição das premissas e requisitos utilizados.
+
 # Motivação
 A Valorização do ambiente, sofisticação aliada a tecnologia, acessibilidade a idosos e cadeirantes, eficiência energética em ambientes climatizados, conforto térmico e acústico a clientes e funcionários, integração com diversos controles de acesso e a consideração com o atual cenário mundial aliada aos cuidados inerentes à prevenção do Covid.
 
