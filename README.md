@@ -27,6 +27,8 @@ A comunicação com a placa lógica será implementada seguindo critérios do pr
 
 # Parâmetros de Funcionamento
 
+Para executar a configuração e ativação da rede CAN basta seguir o arquivo Instruções (https://github.com/Sistemas-Embarcados-EESC/ProjetoFinal-Acesso/blob/main/Instru%C3%A7%C3%B5es)
+
 O sistema deverá acionar os motores responsáveis pela abertura das portas quando detectada a presença de uma pessoa (gerando um sinal de entrada).
 
 O sistema manterá as portas fechadas caso não haja detecção pelos sensores.
