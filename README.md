@@ -23,6 +23,7 @@ O funcionamento do sistema se dará através da utilização de sensores de prox
 A comunicação com a placa lógica será implementada seguindo critérios do protocolo CAN, através dele serão enviadas à rede CAN informações referentes ao estado de abertura da porta que possibilitam monitorar o sistema a partir de outro dispositivo conectado na rede. No mais, também será  registrado os momentos em que a porta atingirá sua abertura e fechamento, visando obter o período que a porta permaneceu aberta e sua frequência de abertura ao longo do tempo.
 
 
+![Diagrama de rede simples](https://user-images.githubusercontent.com/83198956/127915540-0deab4db-77e0-4373-bfaa-65ade2738867.png)
 
 
 # Parâmetros de Funcionamento
