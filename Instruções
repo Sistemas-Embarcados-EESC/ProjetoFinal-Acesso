@@ -8,3 +8,5 @@ as linhas do arquivo can_execute para setar os parâmetros da rede.
 #4 - O arquivo Controle_de_acesso.py contém a lógica de funcionamento que será implementada no sistema, para rodar o a simulação da lógica basta apenas executar o código 
 direto, para rodar os módulos da rede CAN e integrar o envio de informações para a rede basta remover os # dos trechos sinalizados no código. Optou-se deixar os trechos 
 da rede CAN comentados para garantir que o código esteja funcional em caso de falhas no setup da rede.
+
+#5 - Para monitorar as informações rede CAN basta executar o código monitor_can no computador conectado à rede da beaglebone.
