@@ -48,5 +48,5 @@ inserir // na linha 404 para o comando "pinctrl-0 = <&i2c2_pins>;" virar comenta
   $ sudo ip link set can1 up type can bitrate 500000
   $ sudo ifconfig can1 up
 
-8.) (executar o script can_exec contido no git): $ can_exec 
+8.) (executar o script can_exec contido no git): $ can_execute 
 
